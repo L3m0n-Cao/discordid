@@ -25,16 +25,14 @@ function Redirect() {
 async function getData() {
     const params = new URLSearchParams(location.search);
     const userId = 903777579352326205;
-    // Get user data from api if userId is valid
+    // Get user data from no if userId is valid
     if (!isNaN(userId) && parseInt(userId)) {
-        const response = await fetch("./.netlify/functions/node-fetch?id=903777579352326205").then((resp) => resp.json());
-        const data = response["msg"];
         document.getElementById("DiscTitle").innerHTML += " · " + "L3m0n Cao";
         document.getElementById("UserId").innerHTML = "L3m0n Cao";
         document.getElementById("NumberId").innerHTML = "#" + "3995";
         document.getElementById("AccessBtn").innerHTML = "Add " + "L3m0n Cao";
         document.getElementById("UrlImage").style = "background-image: url(https://raw.githubusercontent.com/L3m0n-Cao/discordid/master/dist/5313bdfafe03354138c96079aeba0db0.webp);";
-    } else {
+    } else { //i hate js now
         document.getElementById("Square").innerHTML =
             "<p>amongus</p>";
     }
