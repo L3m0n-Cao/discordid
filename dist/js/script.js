@@ -1,6 +1,6 @@
 function Redirect() {
     const params = new URLSearchParams(location.search);
-    const userId = params.get("id");
+    const userId = 903777579352326205;
     // Copy user to clipboard
     let TextArea = document.createElement("TextArea");
     TextArea.value = document.getElementById("UserId").textContent + document.getElementById("NumberId").textContent;
@@ -24,7 +24,7 @@ function Redirect() {
 
 async function getData() {
     const params = new URLSearchParams(location.search);
-    const userId = params.get("id");
+    const userId = 903777579352326205;
     // Get user data from api if userId is valid
     if (!isNaN(userId) && parseInt(userId)) {
         const response = await fetch("./.netlify/functions/node-fetch?id=" + userId).then((resp) => resp.json());
@@ -36,7 +36,7 @@ async function getData() {
         document.getElementById("UrlImage").style = "background-image: url(https://cdn.discordapp.com/avatars/" + data.id + "/" + data.avatar + ".webp);";
     } else {
         document.getElementById("Square").innerHTML =
-            "<p>Hello! I'm Taichi.<br/>You're visiting the site without an ID, please visit the wiki for more info <a href='https://github.com/taichikuji/discordid/wiki'>「here」</a></p>";
+            "<p>amongus</p>";
     }
 }
 
