@@ -29,11 +29,11 @@ async function getData() {
     if (!isNaN(userId) && parseInt(userId)) {
         const response = await fetch("./.netlify/functions/node-fetch?id=" + userId).then((resp) => resp.json());
         const data = response["msg"];
-        document.getElementById("DiscTitle").innerHTML += " · " + data.username;
-        document.getElementById("UserId").innerHTML = data.username;
-        document.getElementById("NumberId").innerHTML = "#" + data.discriminator;
-        document.getElementById("AccessBtn").innerHTML = "Add " + data.username;
-        document.getElementById("UrlImage").style = "background-image: url(https://cdn.discordapp.com/avatars/" + data.id + "/" + data.avatar + ".webp);";
+        document.getElementById("DiscTitle").innerHTML += " · " + "L3m0n Cao";
+        document.getElementById("UserId").innerHTML = "L3m0n Cao";
+        document.getElementById("NumberId").innerHTML = "#" + "3995";
+        document.getElementById("AccessBtn").innerHTML = "Add " + "L3m0n Cao";
+        document.getElementById("UrlImage").style = "background-image: url(https://raw.githubusercontent.com/L3m0n-Cao/discordid/master/dist/5313bdfafe03354138c96079aeba0db0.webp);";
     } else {
         document.getElementById("Square").innerHTML =
             "<p>amongus</p>";
