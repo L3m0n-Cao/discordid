@@ -29,7 +29,7 @@ async function getData() {
     if (!isNaN(userId) && parseInt(userId)) {
         document.getElementById("DiscTitle").innerHTML += " · " + "L3m0n Cao";
         document.getElementById("UserId").innerHTML = "L3m0n Cao";
-        document.getElementById("NumberId").innerHTML = "#" + "3995";
+        document.getElementById("NumberId").innerHTML = "#" + "0001";
         document.getElementById("AccessBtn").innerHTML = "Add " + "L3m0n Cao";
         document.getElementById("UrlImage").style = "background-image: url(https://raw.githubusercontent.com/L3m0n-Cao/discordid/master/dist/5313bdfafe03354138c96079aeba0db0.webp);";
     } else { //i hate js now
